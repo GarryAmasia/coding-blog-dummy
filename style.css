@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans", san-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: Black;
+}
+
+button {
+  background: gold;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  float: left;
+  box-shadow: -5px 5px 5px rgb(36, 36, 36);
+}
+
+.card {
+  background-color: rgb(203, 203, 203);
+  /* min-width: 350px; --this will take 350px no matter how*/
+  margin: 10px;
+  min-height: 300px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  /* box-shadow: -5px 0px 0px rgb(36, 36, 36); */
+}
+
+/* ----------global msg--------------- */
+
+.global-msg {
+  background: black;
+  color: white;
+  padding: 10px 0;
+}
+
+.top-msg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.header {
+  background: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+
+  display: flex;
+  /* gap: 10px; */
+}
+
+.menu ul li {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  color: green;
+}
+
+.menu i {
+  display: none;
+}
+
+/* ----------hero-section----------- */
+
+.hero {
+  min-height: 80vh;
+  background: url(https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1224500457?b=1&k=20&m=1224500457&s=170667a&w=0&h=OOPEMFamnZo63_2t_W40mYSfU1WrFAHHZRBgNN-GSgI=)
+    no-repeat center center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 3px 5px grey;
+}
+
+/* ----------latest post------------ */
+
+.latest-section {
+  margin-top: 60px;
+}
+
+.latest-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest {
+  width: 60%;
+}
+
+.latest article {
+  margin-top: 70px;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-content img {
+  width: 120px;
+  border: 1px solid rgb(211, 211, 211);
+  box-shadow: 3px 5px grey;
+}
+
+.info {
+  margin: 0 20px;
+}
+
+date {
+  background: rgb(255, 111, 255);
+  opacity: 0.7;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+/* -----------------Aside------------ */
+
+.links {
+  background: orangered;
+  opacity: 0.7;
+  width: 30%;
+  border-radius: 5px;
+  padding: 32px 16px;
+}
+
+.by-country {
+  margin-top: 64px;
+}
+
+/* ----------------recommendation-----------
+ */
+
+.rec {
+  margin-top: 64px;
+}
+
+.rec-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rec-content img {
+  width: 100%;
+  height: 30%;
+  border-radius: 5px;
+}
+
+/* ---------subscribe----------------- */
+
+.subscribe {
+  background: rgb(171, 202, 242);
+  margin: 64px auto;
+  min-height: 200px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 32px;
+}
+
+.subscribe input {
+  padding: 10px;
+  line-height: 20px;
+  border: none;
+}
+
+/* attribute selector */
+[type="submit"] {
+  background: aqua;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* -------------------footer--------------------- */
+
+.footer {
+  padding: 64px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* +++++++++++MEDIA QUERY++++++++++++++++++++++++++ */
+
+/* TABLET */
+
+@media (max-width: 768px) {
+  /* css declaration */
+  .menu {
+    height: 62px;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menu i {
+    display: block;
+  }
+
+  .latest-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .latest {
+    width: 100%;
+  }
+
+  .links {
+    margin-top: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .by-country {
+    margin-top: 0;
+  }
+
+  .rec-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* MOBILE PHONE */
+
+@media (max-width: 480px) {
+  /* css declaration */
+
+  .post-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-content img {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    /* align-items: center; */
+  }
+
+  .subscribe form {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .subscribe form input {
+    margin-bottom: 16px;
+  }
+}
